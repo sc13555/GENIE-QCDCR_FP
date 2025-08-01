@@ -1,0 +1,10 @@
+{ decls }
+namespace genie {  }
+
+[ libGPhHEDISEG.so ]
+# List of selected classes
+class genie::HEDISGenerator
+class genie::HEDISInteractionListGenerator
+class genie::HEDISKinematicsGenerator
+# List of selected namespaces
+namespace genie

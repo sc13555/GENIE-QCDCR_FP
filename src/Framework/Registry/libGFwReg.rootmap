@@ -1,0 +1,33 @@
+{ decls }
+namespace std {  }
+namespace genie {  }
+class TTree;
+namespace genie { template <typename T> class RegistryItem; }
+class TH2F;
+class TH1F;
+class RgAlg;
+
+[ libGFwReg.so ]
+# List of selected classes
+class RgAlg
+class genie::Registry
+class genie::RegistryItem<RgAlg>
+class genie::RegistryItem<RgBool>
+class genie::RegistryItem<RgDbl>
+class genie::RegistryItem<RgH1F>
+class genie::RegistryItem<RgH2F>
+class genie::RegistryItem<RgInt>
+class genie::RegistryItem<RgStr>
+class genie::RegistryItem<RgTree>
+class genie::RegistryItem<TH1F*>
+class genie::RegistryItem<TH2F*>
+class genie::RegistryItem<TTree*>
+class genie::RegistryItem<bool>
+class genie::RegistryItem<double>
+class genie::RegistryItem<int>
+class genie::RegistryItem<string>
+class genie::RegistryItemI
+class vector<genie::Registry>
+header Framework/Registry/RegistryItemI.h
+# List of selected namespaces
+namespace genie

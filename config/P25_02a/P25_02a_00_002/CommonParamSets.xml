@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+  <param_set name="P25_02a_00_002">
+    <param type="alg" name="HadronizationModel">genie::Pythia8Hadronization</param>
+    <param type="string" name="Pythia8ConfigFile">/home/subin137/GENIE-3.06.00/install/config/pythia8/Monash_Tune.cmnd</param>
+  </param_set>

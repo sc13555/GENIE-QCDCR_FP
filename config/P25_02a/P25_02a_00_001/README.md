@@ -1,0 +1,2 @@
+P25_02a_00_001 is QCDCR (Quantum Chromodynamics ColourReconnection Model) based forward physics tune.
+Current config is focused on this tune, so you may have to change config/CommonParam.xml if you want to use other tunes (Monash 2013 tune or Monash based forards physics tune).

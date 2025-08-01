@@ -1,0 +1,40 @@
+! This file contains commands to be read in for a Pythia8 run.
+! Lines not beginning with a letter or digit are comments.
+! Names are case-insensitive  -  but spellings-sensitive!
+! The changes here are illustrative, not always physics-motivated.
+
+! 1) Preventing Error
+Main:timesAllowErrors = 3          ! abort run after this many flawed events
+
+! 2) Process-level control
+ProcessLevel:all = on
+SoftQCD:nonDiffractive = on
+HardQCD:all = off
+WeakSingleBoson:all = off
+
+! 3) Settings related to output in init(), next() and stat().
+Init:showChangedSettings = on      ! list changed settings
+Init:showAllSettings = off         ! list all settings (preferred to be off)
+Init:showChangedParticleData = on  ! list changed particle data
+Init:showAllParticleData = off      ! list all particle data (preferred to be off)
+Stat:showPartonLevel = on          ! additional statistics on MPI
+
+Next:numberCount = 10000           ! print message every n events
+Next:numberShowLHA = 1             ! print LHA information n times
+Next:numberShowInfo = 0            ! print event information n times
+Next:numberShowProcess = 0         ! print process record n times
+Next:numberShowEvent = 0           ! print event record n times
+
+! 4) Forward Physics Tune for Monash
+BeamRemnants:dampPopcorn        = 0
+BeamRemnants:hardRemnantBaryon  = on
+BeamRemnants:aRemnantBaryon     = 0.68
+BeamRemnants:bRemnantBaryon     = 1.22
+BeamRemnants:primordialKTsoft   = 0.56
+BeamRemnants:primordialKThard   = 1.8
+BeamRemnants:halfScaleForKT     = 10
+BeamRemnants:halfMassForKT      = 1
+BeamRemnants:primordialKTremnant= 0.56
+
+! 5) Monash Tune
+Tune:pp = 14                      ! Monash Tune 2013 (Monash Tune based)

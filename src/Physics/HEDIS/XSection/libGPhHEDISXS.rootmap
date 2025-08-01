@@ -1,0 +1,10 @@
+{ decls }
+namespace genie {  }
+
+[ libGPhHEDISXS.so ]
+# List of selected classes
+class genie::HEDISPXSec
+class genie::HEDISStrucFunc
+class genie::HEDISXSec
+# List of selected namespaces
+namespace genie
